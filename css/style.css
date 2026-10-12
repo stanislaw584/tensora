@@ -194,6 +194,7 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
 .mentor h3{font-size:19px}
 .mentor strong{display:block;margin-top:8px;font-size:14px;font-weight:600;color:var(--cy)}
 .mentor span{display:block;margin-top:4px;font-size:13px;color:var(--mu)}
+.mentor strong span{display:inline;margin:0;font-size:inherit;color:inherit}
 
 /* reviews */
 .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
