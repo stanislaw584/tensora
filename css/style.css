@@ -266,8 +266,11 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
   .head--split{flex-direction:column;align-items:flex-start;gap:18px}
   .app__body{grid-template-columns:1fr}.app__side{display:none}
   .kanban{grid-template-columns:repeat(2,1fr)}
-  .stats{grid-template-columns:repeat(2,1fr);row-gap:30px}
+  .stats{grid-template-columns:repeat(2,1fr);row-gap:0;padding:12px 0}
+  .stats>div{padding:22px 44px}
   .stats>div:nth-child(3){border-left:0}
+  .stats>div:nth-child(3){background:linear-gradient(var(--br),var(--br)) 44px 0/calc(100% - 44px) 1px no-repeat}
+  .stats>div:nth-child(4){background:linear-gradient(var(--br),var(--br)) 0 0/calc(100% - 44px) 1px no-repeat}
 }
 
 /* ---------- mobile ---------- */
