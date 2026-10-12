@@ -223,7 +223,7 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
 
 /* cta */
 .cta-wrap{padding-top:130px}
-.cta{position:relative;overflow:hidden;border-radius:40px;padding:64px 60px;background:linear-gradient(135deg,#0F6E8C,#4B34C9)}
+.cta{position:relative;overflow:hidden;border-radius:40px;padding:64px 340px 64px 60px;background:linear-gradient(135deg,#0F6E8C,#4B34C9)}
 .cta::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1.2px,transparent 1.2px);background-size:40px 40px}
 .cta__text{position:relative;z-index:1;max-width:640px}
 .cta h2{font-size:clamp(30px,3.2vw,46px)}
@@ -247,7 +247,7 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.is-in{opacity:1;transform:none}
 .br-m{display:none}
-.mob{display:none}
+.mob{display:none!important}
 .plan__m{display:none}
 
 /* ---------- tablet ---------- */
@@ -283,7 +283,7 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
 @media (max-width:640px){
   :root{--pad:20px}
   .dsk{display:none!important}
-  .mob{display:inline}
+  .mob{display:inline!important}
   .section{padding-top:72px}
   #projects,#tracker,#reviews{display:none}
   .eyebrow{font-size:13px;margin-bottom:14px}
