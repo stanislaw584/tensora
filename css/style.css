@@ -270,6 +270,10 @@ h1{font-size:clamp(38px,4.45vw,64px);line-height:1.22}
 }
 
 /* ---------- mobile ---------- */
+@media (max-width:1000px){
+  .cta{padding-right:60px}
+  .cta__mark{display:none}
+}
 @media (max-width:820px){
   .nav__inner{height:72px}
   .nav__actions{display:none}
