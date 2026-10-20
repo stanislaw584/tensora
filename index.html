@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tensora. Подготовка к старту карьеры в ML</title>
+  <meta name="description" content="Tensora — платформа, которая ведет от основ Python до первого оффера в ML: персональный трек, проекты для портфолио, мок-собеседования и карьерный трекер.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a class="logo" href="#top" aria-label="Tensora">
+      <span class="logo__mark"><svg viewBox="0 0 40 40" width="40" height="40"><path d="M11 12h18M20 12v19" stroke="#04070B" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg></span>
+      <span class="logo__text">Tensora</span>
+    </a>
+    <nav class="nav__links" id="menu" aria-label="Основная навигация">
+      <a href="#tracks">Траектории</a>
+      <a href="#how">Программа</a>
+      <a href="#projects">Проекты</a>
+      <a href="#mentors">Менторы</a>
+      <a href="#pricing">Тарифы</a>
+      <a class="btn btn--ghost nav__mobile-only" href="#">Войти</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--sm" href="#">Войти</a>
+      <a class="btn btn--primary btn--sm" href="#cta">Начать бесплатно</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <span class="pill">Набор на поток. Старт 3 ноября</span>
+      <h1>Твой старт<br><span class="grad">в ML-карьере</span><br>без хаоса</h1>
+      <p class="lead">Платформа, которая ведет от основ Python до первого оффера: персональный трек, проекты для портфолио, мок-собеседования и карьерный трекер.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="#cta">Пройти диагностику</a>
+        <a class="btn btn--outline btn--lg" href="#how">Смотреть программу</a>
+      </div>
+      <div class="trust">
+        <div class="avatars">
+          <img src="assets/img/av-olga.jpg" alt="" width="44" height="44">
+          <img src="assets/img/av-nikita.jpg" alt="" width="44" height="44">
+          <img src="assets/img/av-katya.jpg" alt="" width="44" height="44">
+          <img src="assets/img/mentor-2.jpg" alt="" width="44" height="44">
+        </div>
+        <div>
+          <strong>2 400+ выпускников</strong>
+          <span>87% нашли работу <i class="dsk">в IT </i>за 4 месяца</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__photo"><img src="assets/img/hero.jpg" alt="Студентка Tensora за работой над ML-проектом" width="560" height="680" fetchpriority="high"></div>
+
+      <div class="float float--progress">
+        <small>Твой трек: ML Engineer</small>
+        <div class="float__row"><b>68%</b><span>пройдено</span></div>
+        <div class="bar"><i style="width:68%"></i></div>
+      </div>
+
+      <div class="float float--code" aria-hidden="true">
+        <div class="lights"><i></i><i></i><i></i></div>
+        <code class="c-cy">model.fit(X_train, y)</code>
+        <code>epoch 12/12</code>
+        <code>loss <b class="c-green">0.042 ↓</b></code>
+      </div>
+
+      <div class="float float--offer">
+        <span class="float__ico"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 12.5l5 5L20 6.5" stroke="#5BF08A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+        <div>
+          <strong>Оффер получен</strong>
+          <span>ML Engineer в Fintech</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats">
+      <div><b class="grad">12</b><span class="dsk">недель до первого<br><em>проекта в портфолио</em></span><span class="mob">недель до первого проекта</span></div>
+      <div><b class="grad">4</b><span class="dsk">направления<br><em>с индивидуальным треком</em></span><span class="mob">направления с треком</span></div>
+      <div><b class="grad">40+</b><span class="dsk">менторов<br><em>из ML-команд индустрии</em></span><span class="mob">менторов из индустрии</span></div>
+      <div><b class="grad">1:1</b><span class="dsk">карьерная<br><em>поддержка до оффера</em></span><span class="mob">поддержка до оффера</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tracks">
+  <div class="container">
+    <div class="head head--split">
+      <div>
+        <p class="eyebrow">ТРАЕКТОРИИ</p>
+        <h2>Выбери направление,<br>мы соберем маршрут</h2>
+      </div>
+      <p class="head__note">Каждый трек — это связка теории, практики на реальных данных и карьерной подготовки под конкретную роль. Меняй направление без потери прогресса</p>
+    </div>
+
+    <div class="tracks">
+      <article class="track track--feat">
+        <span class="track__ico"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" /></svg></span>
+        <h3>ML Engineer</h3><p class="mono">От модели до прода</p>
+        <p>Обучай, упаковывай и выводи модели в продакшен</p>
+        <ul class="tags"><li>PyTorch</li><li>MLOps</li><li class="dsk">Docker</li></ul>
+        <a class="track__more" href="#cta">Смотреть трек <span>→</span></a>
+      </article>
+      <article class="track">
+        <span class="track__ico"><svg viewBox="0 0 24 24"><path d="M6 19v-6M12 19V7M18 19v-9" /></svg></span>
+        <h3>Data Scientist</h3><p class="mono">Данные в решения</p>
+        <p>Анализ, статистика, эксперименты и продуктовые метрики</p>
+        <ul class="tags"><li>Pandas</li><li>SQL</li><li class="dsk">A/B</li></ul>
+        <a class="track__more" href="#cta">Смотреть трек <span>→</span></a>
+      </article>
+      <article class="track">
+        <span class="track__ico"><svg viewBox="0 0 24 24"><path d="M5 6h14v9H11l-4 4v-4H5z" /></svg></span>
+        <h3>NLP Engineer</h3><p class="mono">Языковые модели</p>
+        <p>Трансформеры, RAG и LLM-приложения для бизнеса</p>
+        <ul class="tags"><li>LLM</li><li>RAG</li><li class="dsk">HF</li></ul>
+        <a class="track__more" href="#cta">Смотреть трек <span>→</span></a>
+      </article>
+      <article class="track">
+        <span class="track__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></span>
+        <h3>Computer Vision</h3><p class="mono">Зрение для машин</p>
+        <p>Детекция, сегментация и работа с видеопотоком</p>
+        <ul class="tags"><li>CNN</li><li>YOLO</li><li class="dsk">OpenCV</li></ul>
+        <a class="track__more" href="#cta">Смотреть трек <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--band" id="how">
+  <div class="container">
+    <div class="head head--center">
+      <p class="eyebrow">КАК ЭТО РАБОТАЕТ</p>
+      <h2>Четыре шага до оффера</h2>
+    </div>
+    <ol class="steps">
+      <li class="step step--active"><span class="step__n">01</span><h3>Диагностика</h3><p><span class="dsk">20 минут: оцениваем Python, математику и опыт. Находим точки роста</span><span class="mob">20 минут: Python, математика и опыт. Находим точки роста</span></p></li>
+      <li class="step"><span class="step__n">02</span><h3>Персональный трек</h3><p><span class="dsk">Собираем маршрут под цель и график. От 6 до 12 часов в неделю</span><span class="mob">Маршрут под цель и график. От 6 до 12 часов в неделю</span></p></li>
+      <li class="step"><span class="step__n">03</span><h3>Проекты и ревью</h3><p><span class="dsk">Решаешь реальные задачи, ментор разбирает код и учит писать как в команде</span><span class="mob">Реальные задачи и разбор кода от ментора</span></p></li>
+      <li class="step"><span class="step__n">04</span><h3>Карьерный спринт</h3><p><span class="dsk">Резюме, моки, отклики и сопровождение до первого оффера</span><span class="mob">Резюме, моки и отклики до первого оффера</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container projects">
+    <div class="projects__photo">
+      <img src="assets/img/code.jpg" alt="Код ML-проекта на экране" width="560" height="600" loading="lazy">
+      <div class="float float--pr">
+        <div>
+          <strong>Pull Request #14 · Approved</strong>
+          <span>Ментор: «чистый пайплайн, добавь тесты»</span>
+        </div>
+        <i class="ok"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12.5l4.5 4.5L19 7" stroke="#5BF08A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></i>
+      </div>
+    </div>
+    <div class="projects__body">
+      <p class="eyebrow">ПРОЕКТЫ В ПОРТФОЛИО</p>
+      <h2 class="h2--sm">Не учебные задачи,<br>а проекты для работы</h2>
+      <p class="lead lead--sm">Каждый проект с реальными данными, код-ревью от действующего ML-инженера и оформлением для GitHub</p>
+      <ul class="plist">
+        <li><span class="plist__n">01</span><div><h3>Предсказание оттока клиентов</h3><div class="sub"><p class="mono">Классификация, XGBoost, SHAP</p><em>+12% к метрике</em></div></div></li>
+        <li><span class="plist__n">02</span><div><h3>Чат-бот поддержки на RAG</h3><div class="sub"><p class="mono">LLM, векторный поиск, FastAPI</p><em>деплой в облако</em></div></div></li>
+        <li><span class="plist__n">03</span><div><h3>Детекция дефектов на конвейере</h3><div class="sub"><p class="mono">CV, YOLO, ONNX</p><em>real-time 30 FPS</em></div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--glow" id="tracker">
+  <div class="container">
+    <div class="head head--center">
+      <p class="eyebrow">КАРЬЕРНЫЙ ТРЕКЕР</p>
+      <h2 class="h2--sm">Весь поиск работы в одном окне</h2>
+      <p class="head__note head__note--center">Отклики, тестовые, собеседования и офферы. Напоминания и разборы приходят автоматически</p>
+    </div>
+
+    <div class="app" role="img" aria-label="Интерфейс карьерного трекера: воронка откликов">
+      <div class="app__bar">
+        <div class="lights"><i></i><i></i><i></i></div>
+        <span class="app__url">app.tensora.ru/tracker</span>
+      </div>
+      <div class="app__body">
+        <aside class="app__side">
+          <small>ТРЕКЕР</small>
+          <a>Обзор</a><a>Мой трек</a><a class="is-on">Воронка откликов</a><a>Мок-интервью</a><a>Резюме</a><a>Менторы</a>
+        </aside>
+        <div class="app__main">
+          <div class="app__head">
+            <div><h3>Воронка откликов</h3><p>18 активных · 3 собеседования на этой неделе</p></div>
+            <span class="btn btn--primary btn--sm">+ Добавить отклик</span>
+          </div>
+          <div class="kanban">
+            <div class="col"><h4><i style="--c:var(--mu)"></i>Отклик<span>6</span></h4>
+              <div class="kc"><b>ML Engineer</b><span>Финтех · Москва</span><em style="--c:var(--mu)">отклик</em></div>
+              <div class="kc"><b>Junior DS</b><span>Ритейл · удаленно</span><em style="--c:var(--mu)">отклик</em></div>
+              <div class="kc"><b>NLP стажер</b><span>EdTech · СПб</span><em style="--c:var(--mu)">отклик</em></div>
+            </div>
+            <div class="col"><h4><i style="--c:var(--cy)"></i>Тестовое<span>4</span></h4>
+              <div class="kc"><b>Data Scientist</b><span>Маркетплейс</span><em style="--c:var(--cy)">ТЗ</em></div>
+              <div class="kc"><b>ML Engineer</b><span>Логистика</span><em style="--c:var(--cy)">ТЗ</em></div>
+            </div>
+            <div class="col"><h4><i style="--c:var(--vi)"></i>Интервью<span>3</span></h4>
+              <div class="kc"><b>ML Engineer</b><span>Продуктовая IT · 14:00</span><em style="--c:var(--vi)">интервью</em></div>
+              <div class="kc"><b>CV Engineer</b><span>Промтех · пт</span><em style="--c:var(--vi)">интервью</em></div>
+            </div>
+            <div class="col"><h4><i style="--c:var(--green)"></i>Оффер<span>1</span></h4>
+              <div class="kc kc--offer"><b>ML Engineer</b><span>Fintech · 240 000 руб.</span><em style="--c:var(--green)">оффер</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mentors">
+  <div class="container">
+    <div class="head head--split">
+      <div>
+        <p class="eyebrow">МЕНТОРЫ</p>
+        <h2 class="h2--sm">Учат те, кто нанимает</h2>
+      </div>
+      <p class="head__note">Практикующие ML-инженеры и тимлиды. Разбирают код, проводят моки и помогают с офферами</p>
+    </div>
+    <div class="mentors">
+      <article class="mentor"><img src="assets/img/mentor-1.jpg" alt="Алексей Громов" loading="lazy" width="285" height="380"><div class="mentor__info"><h3>Алексей Громов</h3><strong>Lead ML Engineer</strong><span class="dsk">Fintech, 9 лет в ML</span></div></article>
+      <article class="mentor"><img src="assets/img/mentor-2.jpg" alt="Мария Седова" loading="lazy" width="285" height="380"><div class="mentor__info"><h3>Мария Седова</h3><strong><span class="dsk">Senior Data Scientist</span><span class="mob">Senior DS</span></strong><span class="dsk">E-commerce, 7 лет</span></div></article>
+      <article class="mentor"><img src="assets/img/mentor-3.jpg" alt="Дмитрий Орлов" loading="lazy" width="285" height="380"><div class="mentor__info"><h3>Дмитрий Орлов</h3><strong>NLP Team Lead</strong><span class="dsk">AI B2B SaaS, 8 лет</span></div></article>
+      <article class="mentor"><img src="assets/img/mentor-4.jpg" alt="Антон Волков" loading="lazy" width="285" height="380"><div class="mentor__info"><h3>Антон Волков</h3><strong>ML Engineer</strong><span class="dsk">Promtech, 6 лет в CV</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="head head--center">
+      <p class="eyebrow">ИСТОРИИ ВЫПУСКНИКОВ</p>
+      <h2 class="h2--sm">Они уже в профессии</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review">
+        <span class="q">“</span>
+        <blockquote>«Раньше не понимала, с чего начать.<br>Через 5 месяцев получила оффер,<br>а проекты из курса стали козырем»</blockquote>
+        <figcaption><img src="assets/img/av-olga.jpg" alt="" width="44" height="44"><div><b>Ольга К.</b><span>Junior ML Engineer</span></div></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="q">“</span>
+        <blockquote>«Код-ревью — главное. Ментор<br>показал, как выглядит продакшн код.<br>На собеседовании это заметили»</blockquote>
+        <figcaption><img src="assets/img/av-nikita.jpg" alt="" width="44" height="44"><div><b>Никита С.</b><span>Data Scientist</span></div></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="q">“</span>
+        <blockquote>«Моки собеседований сняли страх,<br>а трекер откликов спас от хаоса.<br>Сейчас работаю с LLM в проде»</blockquote>
+        <figcaption><img src="assets/img/av-katya.jpg" alt="" width="44" height="44"><div><b>Екатерина Л.</b><span>NLP Engineer</span></div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="head head--center">
+      <p class="eyebrow">ТАРИФЫ</p>
+      <h2 class="h2--sm">Начни бесплатно<span class="dsk">, расти по мере надобности</span></h2>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Старт</h3><p class="plan__m">0 ₽ навсегда</p>
+        <p class="price"><b>0 ₽</b><span>навсегда</span></p>
+        <ul class="checks"><li>Диагностика уровня</li><li>Первый модуль трека</li><li>Сообщество в Telegram</li></ul>
+        <a class="btn btn--outline btn--block" href="#cta">Начать бесплатно</a>
+      </article>
+      <article class="plan plan--feat">
+        <span class="plan__badge">ПОПУЛЯРНЫЙ</span>
+        <h3>Трек</h3>
+        <p class="price"><b>4 900 ₽</b><span>в месяц</span></p>
+        <ul class="checks"><li>Полный персональный трек</li><li>Проекты с код-ревью</li><li>Карьерный трекер</li><li class="dsk">Мок-собеседования</li></ul>
+        <a class="btn btn--primary btn--block" href="#cta">Выбрать</a>
+      </article>
+      <article class="plan">
+        <h3>Ментор</h3><p class="plan__m">24 900 ₽ в месяц</p>
+        <p class="price"><b>24 900 ₽</b><span>в месяц</span></p>
+        <ul class="checks"><li>Все из тарифа «Трек»</li><li>Личный ментор 1:1</li><li>Разбор резюме и портфолио</li><li>Сопровождение до оффера</li></ul>
+        <a class="btn btn--outline btn--block" href="#cta">Выбрать</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="container cta-wrap" id="cta">
+  <div class="cta">
+    <div class="cta__text">
+      <h2>Готов начать?</h2>
+      <p>За 20 минут ты получишь индивидуальный маршрут</p>
+      <a class="btn btn--white btn--lg" href="#">Пройти диагностику</a>
+    </div>
+    <span class="cta__mark" aria-hidden="true"><svg viewBox="0 0 80 80" width="80" height="80"><path d="M10 14h60M40 14v54" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none"/></svg></span>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo__mark logo__mark--sm"><svg viewBox="0 0 40 40" width="36" height="36"><path d="M11 12h18M20 12v19" stroke="#04070B" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg></span><span class="logo__text">Tensora</span></a>
+        <p>Платформа подготовки<br>к старту карьеры в ML</p>
+      </div>
+      <div class="fcols">
+        <div><h5>ПРОДУКТ</h5><a href="#tracks">Траектории</a><a href="#how">Программа</a><a href="#pricing">Тарифы</a></div>
+        <div><h5>КОМПАНИЯ</h5><a href="#">О нас</a><a href="#mentors">Менторы</a><a href="#">Блог</a></div>
+        <div><h5>ПОДДЕРЖКА</h5><a href="#">FAQ</a><a href="#">Контакты</a><a href="#">Telegram</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Tensora</span><a href="#">Политика конфиденциальности</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
